@@ -3,28 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Fuente Comic Neue desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-
+  <title>Cotizador Robux</title>
   <style>
     html, body {
       margin: 0;
       height: 100%;
-      font-family: 'Comic Neue', cursive;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       background: #f6f0e8;
       color: #5a3e2b;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-
-    body {
       background-image: url('https://64.media.tumblr.com/63e6c1102c3d6724c2d2969f417ab166/d514af50d25891f1-f2/s400x600/78f5ff100ae199e174d2792610af5c0ccc1545d4.gifv');
       background-size: cover;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
     }
 
     .container {
@@ -33,12 +27,15 @@
       border-radius: 20px;
       max-width: 500px;
       width: 90%;
+      box-sizing: border-box;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     img {
       max-width: 280px;
       margin-bottom: 20px;
+      width: 100%;
+      height: auto;
     }
 
     input, button {
@@ -65,6 +62,34 @@
     #aclaracion {
       font-size: 14px;
       color: #5a3e2b;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 25px;
+      }
+
+      input, button {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .resultado {
+        font-size: 20px;
+      }
+
+      #aclaracion {
+        font-size: 13px;
+      }
+
+      img {
+        max-width: 85%;
+        margin-bottom: 15px;
+      }
     }
   </style>
 </head>
